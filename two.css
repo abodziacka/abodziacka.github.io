@@ -87,7 +87,6 @@
 
   }
   body {
-    display: flexbox;
     background-image: url("marble.jpg");
     background-size: 100%;
     background-position: center top;
