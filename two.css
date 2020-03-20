@@ -66,13 +66,16 @@
   
   li a img{
     width:19px;
-    margin-right: 100px;
   }
   
-  
+  .home{
+  width: 50px;
+}
+.home:hover{
+  opacity: 0.7;
+}
   .insta:hover {
     opacity: 0.7; 
-    display: block;
   }
 #brawo{
       position: absolute;
