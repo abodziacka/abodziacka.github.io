@@ -39,7 +39,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #e6cfc3;
-  padding-left: 5%;
+  padding-left: 15%;
   box-shadow: 2px 3px #7e7070;
 }
 
@@ -55,7 +55,7 @@ li a, .dropbtn {
   text-decoration: none;
   font-weight: bold;
   font-size: 20px;
-  padding: 12px 16px 12px 16px;
+  padding: 12px 16px 0px 16px;
   width: 200px;
 }
 
@@ -94,7 +94,7 @@ li.dropdown {
 }
 
 li a img{
-  width:19px;
+  width:30px;
 }
 .home{
   width: 50px;
