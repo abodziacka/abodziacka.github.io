@@ -1,0 +1,109 @@
+#h1{
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 53px;   
+    position: absolute; 
+    text-shadow: 2px 2px #f1eeee;
+    text-align: center;
+
+    }
+#h2{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+    position: absolute; 
+    text-align: center;
+    top:52%;
+
+}
+.border p{
+    font-weight: bold;
+    color: #141414;
+    opacity: 0.9;
+    width: 100%;
+    text-align: center;
+    top:40%;
+    
+
+  }
+body{
+    margin:0;
+    padding: 0;
+    background-image: url("tlo11.jpg");
+    background-size: 100%;
+    background-position: center top;
+    background-repeat: repeat-x;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e6cfc3;
+  padding-left: 15%;
+  box-shadow: 2px 3px #7e7070;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: rgb(102, 64, 64);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 12px 16px 12px 16px;
+  width: 200px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  color: rgb(190, 36, 36);
+}
+
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e2caca;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border: 1px solid #666262;
+  opacity: 0.9;
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+li a img{
+  width:19px;
+  margin-right: 100px;
+}
+
+
+.insta:hover {
+  opacity: 0.7; 
+  display: block;
+}
+  @media screen and (max-width: 750px) {
+    ul li.right, 
+    ul li {float: none;}
+  }
