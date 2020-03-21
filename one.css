@@ -4,6 +4,7 @@
     position: absolute; 
     text-shadow: 2px 2px #f1eeee;
     text-align: center;
+    margin:0;
 
     }
 #h2{
@@ -11,16 +12,18 @@
     font-size: 25px;
     position: absolute; 
     text-align: center;
-    top:52%;
+    margin:0;
 
 }
-.border p{
+.border{
     font-weight: bold;
     color: #141414;
     opacity: 0.9;
     width: 100%;
     text-align: center;
-    top:40%;
+     display: inline-block;
+    position: absolute;
+    padding-top: 500px;
     
 
   }
