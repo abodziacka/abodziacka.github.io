@@ -168,8 +168,7 @@
     font-family: "Comic Sans MS", cursive, sans-serif;
     display: block;
     font-size: 25px;
-    position: absolute;
-    bottom: 10%;
+    position: block;
     left: 60%;
   }
   
