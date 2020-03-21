@@ -54,7 +54,7 @@ li a, .dropbtn {
   text-decoration: none;
   font-weight: bold;
   font-size: 20px;
-  padding: 12px 16px 0px 16px;
+  padding: 12px 25px 0px 25px;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
@@ -93,9 +93,6 @@ li.dropdown {
 
 li a img{
   width:30px;
-}
-.home{
-  width: 50px;
 }
 .home:hover{
   opacity: 0.7;
