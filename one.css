@@ -1,7 +1,6 @@
 #h1{
     font-family: "Arial Black", Gadget, sans-serif;
     font-size: 53px;   
-    position: absolute; 
     text-shadow: 2px 2px #f1eeee;
     text-align: center;
     margin:0;
@@ -10,7 +9,6 @@
 #h2{
     font-family: "Courier New", Courier, monospace;
     font-size: 25px;
-    position: absolute; 
     text-align: center;
     margin:0;
 
@@ -21,7 +19,7 @@
     opacity: 0.9;
     width: 100%;
     text-align: center;
-     display: inline-block;
+    display: inline-block;
     position: absolute;
     padding-top: 500px;
     
@@ -103,7 +101,4 @@ li a img{
 .insta:hover {
   opacity: 0.5; 
 }
-  @media screen and (max-width: 750px) {
-    ul li.right, 
-    ul li {float: none;}
-  }
+
