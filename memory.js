@@ -80,12 +80,18 @@ function DoYouWin() {
 
 function Reset(){
     this.cards = document.querySelectorAll('.memory-card');
-    [hasFlippedCard, lockBoard] = [false, false];
-    [firstCard, secondCard] = [null, null];
+    resetBoard();
     this.moveCount = 0;
     this.wins = 0;
 
-    flipCard();
+    cards.forEach(card => {
+		card.addEventListener('click', flipCard);
+		card.classList.remove('flip');
+	});
+    document.getElementById("game-score").innerHTML = this.moveCount;
+	document.getElementById("button").style.display = "none";
+    document.getElementById("brawo").style.display="none";
+    
 }
 cards.forEach(card => card.addEventListener('click', flipCard));
 
