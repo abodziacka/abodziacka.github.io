@@ -86,9 +86,10 @@
     display:inline-block;
     width:100%;
     background-image: url("marble.jpg");
-    background-size: 100%;
-    background-position: center top;
-    background-repeat: repeat-y;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
   
   .memory-game {
