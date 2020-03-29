@@ -151,11 +151,6 @@ body {
   transition: transform .3s, -webkit-transform .3s;
 }
 
-.memory-game .memory-card .flip {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
 .memory-game .memory-card .front-face {
   width: 100%;
   height: 100%;
@@ -179,6 +174,11 @@ body {
 .memory-game .memory-card .back-face:hover {
   cursor: pointer;
   opacity: 0.8;
+}
+
+.memory-card.flip {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 #button {
