@@ -1,4 +1,4 @@
-$color-hover: rgb(190, 36, 36);
+@import './variables';
 
 ul{
   list-style-type: none;
@@ -42,37 +42,38 @@ ul{
             padding: 12px 25px 0px 25px;
             
         }
-        .dropdown{
-            display: inline-block;
-            .dropdown-content {
-                display: none;
-                position: absolute;
-                background-color: #e2caca;
-                min-width: 160px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                border: 1px solid #666262;
-                opacity: 0.9;
-                a {
-                    color: black;
-                    text-decoration: none;
-                    display: block;
-                    text-align: center;
-                    &:hover {background-color: #f1f1f1;}
-                }
-              
-            }
-            &:hover {
-                .dropbtn{
-                    color: $color-hover;
-                }
-                .dropdown-content {
-                    display: block;
-                    top:16px;
-                }
-            
-            }
-
-        }
+        
         
     }
 }
+
+li.dropdown {
+    display: inline-block;
+    &:hover .dropbtn{
+        color: rgb(190, 36, 36);
+    }
+    &:hover .dropdown-content {
+        display: block;
+        top:16px;
+      }
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e2caca;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 1px solid #666262;
+    opacity: 0.9;
+    a {
+        color: black;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        &:hover{
+            background-color: #f1f1f1
+        }
+      }
+  }
+ 
