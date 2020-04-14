@@ -1,33 +1,193 @@
 <!doctype html>
 <html lang="pl">
-	<head>
+
+<head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Hi, I'm Ola</title>
-	</head>
-	<body>
-        <div class="border">
-		 <p id="h0">Hi, I'm</p>
-                 <p id="h1">Aleksandra Bodziacka</p><hr class="line">
-                 <p id="h2">A 3rd year student of IT</p>
-         </div>
-        
-         <ul>
-		 <li><a href= "https://abodziacka.github.io/" class="home"><img src="home.png" alt="home"></a></li>
-                <li><a href="#1">About me</a></li>
-                <li><a href="#4">My skills</a></li>
-                <li class="dropdown"><a href="#5" class="dropbtn">Projects</a>
-                        <div class="dropdown-content">
-                               <a href="https://abodziacka.github.io/memory.html">Memory Game</a>
-                         </div>
-                        
-                </li>
-                <li><a href="#6">Contact</a></li>
+</head>
 
-                <li style="float: right;"><a href="https://www.instagram.com/a.bodziacka/"  id="insta"><img src="instagram.png" alt="insta"></a></li>
+<body>
+        <header class="header">
+                <div class="container" id="me">
+                        <p id="h0">Hi, I'm</p>
+                        <p id="h1">Aleksandra Bodziacka</p>
+                        <hr class="line">
+                        <p id="h2">A 3rd year student of IT</p>
+                </div>
+
+        </header>
+
+        <nav class="nav" id="myTopnav">
+                <div class="container">
+                        <a href="#me" class="home" class="active">Aleksandra Bodziacka</a>
+                        <a href="#memory1">Memory Game</a>
+                        <a href="#contact">Contact</a>
+
+                        <a href="https://www.instagram.com/a.bodziacka/" id="insta"><img src="instagram.png"
+                                        alt="insta"></a></li>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars"></i></a>
 
 
 
-        </ul>
-	</body>
+                </div>
+
+
+        </nav>
+
+        <section class="section">
+                <div class="container" id="projekty">
+                        <h2> Projekty</h2>
+                        <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non odio efficitur,
+                                varius nisl
+                                a, tincidunt augue. Nunc dapibus enim commodo mi volutpat, vel molestie mauris tempor.
+                                Pellentesque a tellus non nulla vestibulum ultrices ut in urna. Sed lobortis, lorem quis
+                                egestas
+                                iaculis, elit odio porttitor nulla, vel lacinia lacus tellus vel magna. Cras sapien
+                                nunc, mattis
+                                ut convallis in, feugiat a orci. Nulla auctor quis nisi at congue. Nullam tincidunt
+                                libero vitae
+                                neque maximus, sit amet scelerisque urna accumsan. Nulla eu ligula vel lorem lacinia
+                                accumsan.
+                                Pellentesque vulputate, risus quis luctus elementum, est ante tincidunt mi, sed aliquam
+                                risus ex
+                                non diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                cubilia
+                                Curae; Etiam sodales est vitae egestas euismod. Maecenas quis risus elit. Maecenas
+                                tempus
+                                dignissim libero eu posuere.
+
+
+                        </p>
+                </div>
+
+        </section>
+        <section class="section">
+                <div class="container" id="memory1">
+                        <h2> Memory Game</h2>
+                        <h1 id="brawo">Congratulations!</h1>
+                        <section class="memory-game">
+                                <div class="memory-card" data-framework="card_1">
+                                        <img class="front-face" src="card_1.png" alt="card_1" />
+                                        <img class="back-face" src="memory.png" alt="memory" />
+                                </div>
+                                <div class="memory-card" data-framework="card_1">
+                                        <img class="front-face" src="card_1.png" alt="card_1" />
+                                        <img class="back-face" src="memory.png" alt="memory" />
+                                </div>
+
+                                <div class="memory-card" data-framework="card_2">
+                                        <img class="front-face" src="card_2.png" alt="card_2" />
+                                        <img class="back-face" src="memory.png" alt="memory" />
+                                </div>
+                                <div class="memory-card" data-framework="card_2">
+                                        <img class="front-face" src="card_2.png" alt="card_2" />
+                                        <img class="back-face" src="memory.png" alt="memory" />
+                                </div>
+
+                                <div class="memory-card" data-framework="card_3">
+                                        <img class="front-face" src="card_3.png" alt="card_3" />
+                                        <img class="back-face" src="memory.png" alt="memory" />
+                                </div>
+                                <div class="memory-card" data-framework="card_3">
+                                        <img class="front-face" src="card_3.png" alt="card_3" />
+                                        <img class="back-face" src="memory.png" alt="memory" />
+                                </div>
+
+                                <div class="memory-card" data-framework="card_4">
+                                        <img class="front-face" src="card_4.png" alt="card_4" />
+                                        <img class="back-face" src="memory.png" alt="memory" />
+                                </div>
+                                <div class="memory-card" data-framework="card_4">
+                                        <img class="front-face" src="card_4.png" alt="card_4" />
+                                        <img class="back-face" src="memory.png" alt="memory" />
+                                </div>
+
+                                <div class="memory-card" data-framework="card_5">
+                                        <img class="front-face" src="card_5.png" alt="card_5" />
+                                        <img class="back-face" src="memory.png" alt="memory" />
+                                </div>
+                                <div class="memory-card" data-framework="card_5">
+                                        <img class="front-face" src="card_5.png" alt="card_5" />
+                                        <img class="back-face" src="memory.png" alt="memory" />
+                                </div>
+
+                                <div class="memory-card" data-framework="card_6">
+                                        <img class="front-face" src="card_6.png" alt="card_6" />
+                                        <img class="back-face" src="memory.png" alt="memory" />
+                                </div>
+                                <div class="memory-card" data-framework="card_6">
+                                        <img class="front-face" src="card_6.png" alt="card_6" />
+                                        <img class="back-face" src="memory.png" alt="memory" />
+                                </div>
+
+                                <div class="memory-card" data-framework="card_7">
+                                        <img class="front-face" src="card_7.png" alt="card_7" />
+                                        <img class="back-face" src="memory.png" alt="memory" />
+                                </div>
+                                <div class="memory-card" data-framework="card_7">
+                                        <img class="front-face" src="card_7.png" alt="card_7" />
+                                        <img class="back-face" src="memory.png" alt="memory" />
+                                </div>
+
+                                <div class="memory-card" data-framework="card_8">
+                                        <img class="front-face" src="card_8.png" alt="card_8" />
+                                        <img class="back-face" src="memory.png" alt="memory" />
+                                </div>
+                                <div class="memory-card" data-framework="card_8">
+                                        <img class="front-face" src="card_8.png" alt="card_8" />
+                                        <img class="back-face" src="memory.png" alt="memory" />
+                                </div>
+                                <div class="numbOfMoves">
+                                        <div class="moves">Moves: </div>
+                                        <div id="game-score">0</div>
+                                </div>
+                                <button id="button" onclick="Reset()"><b>Let's play again!</b></button>
+                        </section>
+
+
+                </div>
+
+        </section>
+        <section class="section">
+                <div class="container" id="contact">
+                        <h2> Kontakt</h2>
+                        <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non odio efficitur,
+                                varius nisl
+                                a, tincidunt augue. Nunc dapibus enim commodo mi volutpat, vel molestie mauris tempor.
+                                Pellentesque a tellus non nulla vestibulum ultrices ut in urna. Sed lobortis, lorem quis
+                                egestas
+                                iaculis, elit odio porttitor nulla, vel lacinia lacus tellus vel magna. Cras sapien
+                                nunc, mattis
+                                ut convallis in, feugiat a orci. Nulla auctor quis nisi at congue. Nullam tincidunt
+                                libero vitae
+                                neque maximus, sit amet scelerisque urna accumsan. Nulla eu ligula vel lorem lacinia
+                                accumsan.
+                                Pellentesque vulputate, risus quis luctus elementum, est ante tincidunt mi, sed aliquam
+                                risus ex
+                                non diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                cubilia
+                                Curae; Etiam sodales est vitae egestas euismod. Maecenas quis risus elit. Maecenas
+                                tempus
+                                dignissim libero eu posuere.
+
+
+                        </p>
+                </div>
+
+        </section>
+
+        <footer class="footer">
+                <div class="container">
+                        <p>&copy; Aleksandra Bodziacka, 2020. </p>
+
+                </div>
+        </footer>
+        <script src="memory.js"></script>
+
+</body>
+
 </html>
