@@ -3,7 +3,9 @@
 
 <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <title>Hi, I'm Ola</title>
 </head>
 
@@ -19,19 +21,21 @@
         </header>
 
         <nav class="nav" id="myTopnav">
-                <div class="container">
-                        <a href="#me" class="home">Aleksandra Bodziacka</a>
-                        <a href="#memory1">Memory Game</a>
-                        <a href="#contact">Contact</a>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkBtn">
+                        <i class="fas fa-bars"></i>
+                </label>
+                <label class="home"> Aleksandra Bodziacka</label>
+                        <ul>
+                                <li><a class="active" href="#">Home</a></li>
+                                <li><a href="#memory1">Memory Game</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                                <li><a href="https://www.instagram.com/a.bodziacka/" id="insta"><img src="instagram.png" alt="insta"></a></li>
+        
+                        </ul>
+                        
 
-                        <a href="https://www.instagram.com/a.bodziacka/" id="insta"><img src="instagram.png"
-                                        alt="insta"></a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                                <i class="fa fa-bars"></i></a>
 
-
-
-                </div>
 
 
         </nav>
