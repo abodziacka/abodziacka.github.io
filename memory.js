@@ -1,5 +1,4 @@
 var cards = document.querySelectorAll('.memory-card');
-
 var hasFlippedCard = false;
 var lockBoard = false;
 var firstCard, secondCard;
@@ -78,6 +77,7 @@ function DoYouWin() {
     return;
 }
 
+
 function Reset(){
     this.cards = document.querySelectorAll('.memory-card');
     resetBoard();
@@ -95,3 +95,12 @@ function Reset(){
 }
 cards.forEach(card => card.addEventListener('click', flipCard));
 
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "nav") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav";
+    }
+  }
