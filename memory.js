@@ -126,7 +126,7 @@ function validation() {
 
 
     console.log(ile);
-    if (ile.length == 4) {
+    if (ile.length == 5) {
         error.innerHTML="";
         alert("Zarejestrowano!");
         ResetForm();
@@ -144,9 +144,9 @@ function NameValidation() {
         if (!im.test(name.value)) {
             name.style.border = "2px solid red";
             nameError.innerHTML = "Minimalna ilość znaków to 3, a maksymalna 12";
-            if (ile.includes(name.value)) {
+            if (ile.includes(name)) {
                 for (var i = 0; i < ile.length; i++) {
-                    if (ile[i] === name.value) {
+                    if (ile[i] === name) {
 
                         ile.splice(i, 1);
                         i--;
@@ -157,8 +157,8 @@ function NameValidation() {
         else {
             name.style.border = "2px solid green";
             nameError.innerHTML = "";
-            if (!ile.includes(name.value)) {
-                ile.push(name.value);
+            if (!ile.includes(name)) {
+                ile.push(name);
             }
         }
     })
@@ -173,9 +173,9 @@ function SurnameValidation() {
         if (im2.test(surname.value) === false) {
             surname.style.border = "2px solid red";
             surnameError.innerHTML = "Minimalna ilość znaków to 3, a maksymalna 15";
-            if (ile.includes(surname.value)) {
+            if (ile.includes(surname)) {
                 for (var i = 0; i < ile.length; i++) {
-                    if (ile[i] === surname.value) {
+                    if (ile[i] === surname) {
 
                         ile.splice(i, 1);
                         i--;
@@ -187,8 +187,8 @@ function SurnameValidation() {
         else {
             surname.style.border = "2px solid green";
             surnameError.innerHTML = "";
-            if (!ile.includes(surname.value)) {
-                ile.push(surname.value);
+            if (!ile.includes(surname)) {
+                ile.push(surname);
             }
 
         }
@@ -204,9 +204,9 @@ function EmailValidation() {
         if (em.test(email.value) === false) {
             email.style.border = "2px solid red";
             emailError.innerHTML = "Niepoprawny email";
-            if (ile.includes(email.value)) {
+            if (ile.includes(email)) {
                 for (var i = 0; i < ile.length; i++) {
-                    if (ile[i] === email.value) {
+                    if (ile[i] === email) {
 
                         ile.splice(i, 1);
                         i--;
@@ -219,8 +219,8 @@ function EmailValidation() {
             email.style.border = "2px solid green";
             emailError.innerHTML = "";
 
-            if (!ile.includes(email.value)) {
-                ile.push(email.value);
+            if (!ile.includes(email)) {
+                ile.push(email);
             }
 
         }
@@ -236,9 +236,9 @@ function PasswordValidation() {
         if (haslo.test(password.value) === false) {
             password.style.border = "2px solid red";
             passwordError.innerHTML = "Hasło musi składać się z co najmniej 6 znaków, 1 wielkiej litery i cyfry.";
-            if (ile.includes(password.value)) {
+            if (ile.includes(password)) {
                 for (var i = 0; i < ile.length; i++) {
-                    if (ile[i] === password.value) {
+                    if (ile[i] === password) {
 
                         ile.splice(i, 1);
                         i--;
@@ -250,8 +250,8 @@ function PasswordValidation() {
             password.style.border = "2px solid green";
             passwordError.innerHTML = "";
 
-            if (!ile.includes(password.value)) {
-                ile.push(password.value);
+            if (!ile.includes(password)) {
+                ile.push(password);
             }
 
         }
@@ -266,9 +266,9 @@ function SamePass() {
         if (!(password.value === secondPassword.value)) {
             secondPassword.style.border = "2px solid red";
             secPassError.innerHTML = "Hasła muszą być takie same";
-            if (ile.includes(secondPassword.value)) {
+            if (ile.includes(secondPassword)) {
                 for (var i = 0; i < ile.length; i++) {
-                    if (ile[i] === secondPassword.value) {
+                    if (ile[i] === secondPassword) {
 
                         ile.splice(i, 1);
                         i--;
@@ -280,8 +280,8 @@ function SamePass() {
         else {
             secondPassword.style.border = "2px solid green";
             secPassError.innerHTML = "";
-            if (!ile.includes(secondPassword.value)) {
-                ile.push(secondPassword.value);
+            if (!ile.includes(secondPassword)) {
+                ile.push(secondPassword);
             }
 
         }
@@ -291,19 +291,14 @@ function SamePass() {
 
 function ResetForm() {
     var ile = [];
-    const form = document.getElementsByClassName("form");
     const name = document.getElementById("name");
     const surname = document.getElementById("surname");
     const email = document.getElementById("email");
     const password = document.getElementById("password");
     const secondPassword = document.getElementById("secondPassword");
 
-    var nameError = document.getElementById("nameError");
-    var surnameError = document.getElementById("surnameError");
-    var emailError = document.getElementById("emailError");
-    var passwordError = document.getElementById("passwordError");
-    var secPassError = document.getElementById("secPassError");
-    var error = document.getElementById("error");
+    var input = document.getElementsByClassName("input");
+    input.innerHTML="";
 
     name.style.border = "none";
     surname.style.border = "none";
