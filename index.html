@@ -28,59 +28,44 @@
                 <label class="home"> Aleksandra Bodziacka</label>
                         <ul>
                                 <li><a class="active" href="#">Home</a></li>
+                                <li><a href="#about">About me</a></li>
                                 <li><a href="#memory1">Memory Game</a></li>
                                 <li><a href="#contact">Contact</a></li>
-                                <li><a onclick="Register()">Sign up</a></li>
+                                <li><a href="#register">Sign up</a></li>
                                 <li><a href="https://www.instagram.com/a.bodziacka/" id="insta"><img src="instagram.png" alt="insta"></a></li>
         
                         </ul>
         </nav>
 
-        <section class="section">
-                <div class="container" id="registerBox">
-                        <h1>Sign up</h1>
-                        <form method="POST" class="form">
-                                <input type="text" class="name" placeholder="Name" required>
-                                <input type="text" class="surname" placeholder="Surname" required>
-                                <input type="email" class="email" placeholder="someone@abc.com" required>
-                                <input type="text" class="password" placeholder="Password" required>
-                                <input type="text" class="secondPassword" placeholder="RepeatPassword" required>
-                                <input type="submit" class="buttonReg" value="Sign up">
 
-
-                        </form>
-                </div>
-
-        </section>
+                <section class="section">
+                        <div class="container" id="about">
+                                <h2> About me</h2>
+                                <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non odio efficitur,
+                                        varius nisl
+                                        a, tincidunt augue. Nunc dapibus enim commodo mi volutpat, vel molestie mauris tempor.
+                                        Pellentesque a tellus non nulla vestibulum ultrices ut in urna. Sed lobortis, lorem quis
+                                        egestas
+                                        iaculis, elit odio porttitor nulla, vel lacinia lacus tellus vel magna. Cras sapien
+                                        nunc, mattis
+                                        ut convallis in, feugiat a orci. Nulla auctor quis nisi at congue. Nullam tincidunt
+                                        libero vitae
+                                        neque maximus, sit amet scelerisque urna accumsan. Nulla eu ligula vel lorem lacinia
+                                        accumsan.
+                                        Pellentesque vulputate, risus quis luctus elementum, est ante tincidunt mi, sed aliquam
+                                        risus ex
+                                        non diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                        cubilia
+                                        Curae; Etiam sodales est vitae egestas euismod. Maecenas quis risus elit. Maecenas
+                                        tempus
+                                        dignissim libero eu posuere.
         
-        <section class="section">
-                <div class="container" id="projekty">
-                        <h2> Projekty</h2>
-                        <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non odio efficitur,
-                                varius nisl
-                                a, tincidunt augue. Nunc dapibus enim commodo mi volutpat, vel molestie mauris tempor.
-                                Pellentesque a tellus non nulla vestibulum ultrices ut in urna. Sed lobortis, lorem quis
-                                egestas
-                                iaculis, elit odio porttitor nulla, vel lacinia lacus tellus vel magna. Cras sapien
-                                nunc, mattis
-                                ut convallis in, feugiat a orci. Nulla auctor quis nisi at congue. Nullam tincidunt
-                                libero vitae
-                                neque maximus, sit amet scelerisque urna accumsan. Nulla eu ligula vel lorem lacinia
-                                accumsan.
-                                Pellentesque vulputate, risus quis luctus elementum, est ante tincidunt mi, sed aliquam
-                                risus ex
-                                non diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-                                cubilia
-                                Curae; Etiam sodales est vitae egestas euismod. Maecenas quis risus elit. Maecenas
-                                tempus
-                                dignissim libero eu posuere.
-
-
-                        </p>
-                </div>
-
-        </section>
+        
+                                </p>
+                        </div>
+        
+                </section>
         <section class="section">
                 <div class="container" id="memory1">
                         <h2> Memory Game</h2>
@@ -196,6 +181,41 @@
                 </div>
 
         </section>
+        <section class="section">
+                <div class="container" id="register">
+                        <div class="boxRegister">
+                                <h2><a onclick="Register()">Sign up</a></h2>
+                        </div>
+                        <form method="POST" class="form"> 
+                                
+                                <input type="text" id="name" placeholder="First Name" required>
+                                <div class="error" id="nameError">a</div>
+
+                                <input type="text" id="surname" placeholder="Last Name" required>
+                                <div class="error" id="surnameError">a</div>
+
+
+                                <input type="email" id="email" placeholder="someone@abc.com" required>
+                                <div class="error" id="emailError">a</div>
+
+
+                                <input type="password" id="password" placeholder="Password" required>
+                                <div class="error" id="passwordError">a</div>
+
+
+                                <input type="password" id="secondPassword" placeholder="RepeatPassword" required>
+                                <div class="error" id="secPassError">a</div>
+
+
+                                <input type="button" id="buttonReg" value="Sign up" onclick="validation()">
+                                <div class="error" id="error">a</div>
+
+        
+        
+                        </form>
+                </div>
+        </section>
+       
 
         <footer class="footer">
                 <div class="container">

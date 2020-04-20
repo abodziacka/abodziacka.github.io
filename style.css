@@ -55,13 +55,49 @@ body{
     text-shadow: 5px 5px rgb(34, 32, 32);
 
   }
-.home{
-  color: rgb(238, 228, 228);
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 25px;
-  line-height: 80px;
-  padding: 0 100px;
+
+/***REGISTER***/ 
+.form{
+  background: transparent;
+  color: azure;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  position: relative;
+}
+input{
+  margin: 8px 0;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: rgb(88, 82, 82);
+  display: inline-block;
+  
+}
+#buttonReg{
+  background: transparent;
+    border: 1px solid rgb(34, 32, 32);
+    color: rgb(34, 32, 32);
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#buttonReg:hover{
+  background: rgb(34, 32, 32);
+    color:white;
+}
+
+#name, #surname, #email, #password, #secondPassword{
+  border-bottom: 1px solid rgb(34, 32, 32);
+}
+form .error{
+  text-align: center;
+  font-size: 10px;
+  margin-top: 0;
+  color: rgb(187, 64, 64);
 }
 
 /*NAVIGATION*/
@@ -73,7 +109,14 @@ body{
         z-index: 1;
         position: fixed;
     }
-
+    .home{
+      color: rgb(238, 228, 228);
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-size: 25px;
+      line-height: 80px;
+      padding: 0 100px;
+    }
     .nav ul{
       float: right;
       margin-right: 20px;
@@ -90,14 +133,16 @@ body{
         color: rgb(238, 228, 228);
         text-align: center;
         text-decoration: none;
-        font-size:  20px;
+        font-size:  15px;
         text-transform: uppercase;
         padding: 7px 13px;
         border-radius: 3px;
       }
       
       a.active, a:hover{
+        font-size:  20px;
         transition: .5s;
+        color: rgb(224, 216, 178);
       }
 
       .checkBtn{
@@ -115,13 +160,13 @@ body{
 
 
       /*RESPONSIVE*/
-      @media (max-width:1220px){
+      @media (max-width:1405px){
         .home{
           padding: 0 50px;
           font-size: 20px;
         }
       }
-      @media (max-width:1060px){
+      @media (max-width:1250px){
         .checkBtn{display: block;}
         ul{
           position: fixed;
@@ -151,6 +196,9 @@ body{
         }
       }
       @media (max-width:920px){
+        .nav a {
+          font-size:  13px;
+        }
         #h0{
           font-size: 25px;
         }
