@@ -120,7 +120,7 @@ function myFunction() {
     var emailError=document.getElementById("emailError");
     var passwordError=document.getElementById("passwordError");
     var secPassError=document.getElementById("secPassError");
-    var error=docume.getElementById("error");
+    var error=document.getElementById("error");
 
     function validation(){
 
