@@ -188,27 +188,27 @@
                         </div>
                         <form method="POST" class="form"> 
                                 
-                                <input type="text" id="name" placeholder="First Name" required>
-                                <div class="error" id="nameError">a</div>
+                                <input type="text" id="name" placeholder="First Name" onkeydown="NameValidation()" required>
+                                <div class="error" id="nameError"></div>
 
-                                <input type="text" id="surname" placeholder="Last Name" required>
-                                <div class="error" id="surnameError">a</div>
-
-
-                                <input type="email" id="email" placeholder="someone@abc.com" required>
-                                <div class="error" id="emailError">a</div>
+                                <input type="text" id="surname" placeholder="Last Name" onkeydown="SurnameValidation()" required>
+                                <div class="error" id="surnameError"></div>
 
 
-                                <input type="password" id="password" placeholder="Password" required>
-                                <div class="error" id="passwordError">a</div>
+                                <input type="email" id="email" placeholder="someone@abc.com" onkeydown="EmailValidation()" required>
+                                <div class="error" id="emailError"></div>
 
 
-                                <input type="password" id="secondPassword" placeholder="RepeatPassword" required>
-                                <div class="error" id="secPassError">a</div>
+                                <input type="password" id="password" placeholder="Password" onkeydown="PasswordValidation()" required>
+                                <div class="error" id="passwordError"></div>
+
+
+                                <input type="password" id="secondPassword" placeholder="RepeatPassword" onkeydown="SamePass()" required>
+                                <div class="error" id="secPassError"></div>
 
 
                                 <input type="button" id="buttonReg" value="Sign up" onclick="validation()">
-                                <div class="error" id="error">a</div>
+                                <div class="error" id="error"></div>
 
         
         

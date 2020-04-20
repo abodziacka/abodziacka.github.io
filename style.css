@@ -95,7 +95,7 @@ input{
 }
 form .error{
   text-align: center;
-  font-size: 10px;
+  font-size: 12px;
   margin-top: 0;
   color: rgb(187, 64, 64);
 }
