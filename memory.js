@@ -132,10 +132,10 @@ function myFunction() {
 
         if (ile===5){
             error.innerHTML("");
-            alert("Utworzyłeś konto!");
+            alert("OK");
         }
         else{
-            error.innerHTML("Wszystkie pola muszą być uzupełnione!");
+            error.innerHTML("Błąd!");
         }
 
     }
@@ -144,7 +144,7 @@ function myFunction() {
     
 
     function NameValidation(name){
-        var im=/^[a-zA-Z ]{3,12}$/;
+        var im=/^[a-zA-Z]{3,12}$/;
 
         document.addEventListener("input", function(){
             if(im.test(name)===false){
@@ -163,64 +163,84 @@ function myFunction() {
 
 
     function SurnameValidation(){
-        var im2=/^[a-zA-Z ]{3,12}$/;
+        var im2=/^[a-zA-Z]{3,15}$/;
 
-        if(im2.test(surname)===false){
-            surname.style.border = "2px solid red";
-            surnameError.innerHTML = "Minimalna ilość znaków to 3, a maksymalna 12";
+        document.addEventListener("input", function(){
+            if(im2.test(surname)===false){
+                surname.style.border = "2px solid red";
+                surnameError.innerHTML = "Minimalna ilość znaków to 3, a maksymalna 15";
+    
+            }
+            else{
+                surname.style.border = "2px solid green";
+                surnameError.innerHTML = "";
+                ile+1;
+    
+            }
 
-        }
-        else{
-            surname.style.border = "2px solid green";
-            surnameError.innerHTML = "";
-            ile+1;
+        })
 
-        }
+        
     }
 
     function EmailValidation(){
         var em=/^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$/;
-        if(em.test(email)===false){
-            email.style.border = "2px solid red";
-            emailError.innerHTML = "Niepoprawny email";
+        
+        document.addEventListener("input", function(){
+            if(em.test(email)===false){
+                email.style.border = "2px solid red";
+                emailError.innerHTML = "Niepoprawny email";
+    
+            }
+            else{
+                email.style.border = "2px solid green";
+                emailError.innerHTML = "";
+                ile+1;
+    
+    
+            }
 
-        }
-        else{
-            email.style.border = "2px solid green";
-            emailError.innerHTML = "";
-            ile+1;
-
-
-        }
+        })
+        
     }
 
     function PasswordValidation(){
         var haslo = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%\^&*_])(?:[a-zA-Z0-9!@#$%\^&*_]{8,12})$/;
-        if(haslo.test(password)===false){
-            password.style.border = "2px solid red";
-            passwordError.innerHTML = "Niepoprawne haslo";
+        
+        document.addEventListener("input", function(){
 
-        }
-        else{
-            password.style.border = "2px solid green";
-            passwordError.innerHTML = "";
-            ile+1;
+            if(haslo.test(password)===false){
+                password.style.border = "2px solid red";
+                passwordError.innerHTML = "Niepoprawne haslo";
+    
+            }
+            else{
+                password.style.border = "2px solid green";
+                passwordError.innerHTML = "";
+                ile+1;
+    
+    
+            }
 
-
-        }
+        })
     }
 
     function SamePass(){
-        if(password===secondPassword){
-            secondPassword.style.border = "2px solid red";
-            secPassError.innerHTML = "Hasła muszą być takie same";
+        
+        document.addEventListener("input", function(){
 
-        }
-        else{
-            secondPassword.style.border = "2px solid green";
-            secPassError.innerHTML = "";
-            ile+1;
-
-        }  
+            if(password===secondPassword){
+                secondPassword.style.border = "2px solid red";
+                secPassError.innerHTML = "Hasła muszą być takie same";
+    
+            }
+            else{
+                secondPassword.style.border = "2px solid green";
+                secPassError.innerHTML = "";
+                ile+1;
+    
+            } 
+            
+        }) 
      }
 
