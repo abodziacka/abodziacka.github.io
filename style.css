@@ -110,7 +110,7 @@ form .error{
         position: fixed;
     }
     .home{
-      font-family: 'Aguafina Script';font-size: 22px;
+      font-family: 'Calligraffitti', cursive;
       color: rgb(238, 228, 228);
       text-transform: uppercase;
       letter-spacing: 5px;
@@ -118,7 +118,7 @@ form .error{
       padding: 0 100px;
     }
     .home2{
-      font-family: 'Aguafina Script';font-size: 22px;
+      font-family: 'Calligraffitti', cursive;
       color: rgb(238, 228, 228);
       text-transform: uppercase;
       letter-spacing: 5px;
