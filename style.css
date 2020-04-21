@@ -110,12 +110,21 @@ form .error{
         position: fixed;
     }
     .home{
+      font-family: 'Aguafina Script';font-size: 22px;
       color: rgb(238, 228, 228);
       text-transform: uppercase;
       letter-spacing: 5px;
-      font-size: 25px;
       line-height: 80px;
       padding: 0 100px;
+    }
+    .home2{
+      font-family: 'Aguafina Script';font-size: 22px;
+      color: rgb(238, 228, 228);
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      line-height: 80px;
+      padding: 0 100px;
+      display: none;
     }
     .nav ul{
       float: right;
@@ -160,13 +169,13 @@ form .error{
 
 
       /*RESPONSIVE*/
-      @media (max-width:1405px){
+      @media screen and (max-width:1405px){
         .home{
           padding: 0 50px;
           font-size: 20px;
         }
       }
-      @media (max-width:1250px){
+      @media screen and  (max-width:1250px){
         .checkBtn{display: block;}
         ul{
           position: fixed;
@@ -195,7 +204,7 @@ form .error{
           left: 0;
         }
       }
-      @media (max-width:920px){
+      @media screen and (max-width:920px){
         .nav a {
           font-size:  13px;
         }
@@ -219,10 +228,15 @@ form .error{
         }
         
       }
-      @media (max-width:714px){
+      @media screen and (max-width:714px){
+        
+        .memory-game {
+          width: 150px;
+          height: 150px;
+        }
         .memory-card {
-          width: 90px;
-          height: 90px;
+          width: 30px;
+          height: 30px;
           margin: 3px;
         }
         .container{
@@ -230,10 +244,15 @@ form .error{
           padding-left: 5px;
           padding-right: 5px;
          }
-          
          ul{
           height:20vh;
         }
+      }
+      @media screen and (max-width:515px){
+        .home{
+          display: none;
+        }
+        .home2{display: inline-block;}
       }
       .section{
           padding: 80px 0;
@@ -246,6 +265,7 @@ form .error{
       .section *:not(:first-child){
           margin-top: 5px;
       }
+      
 
 
       /* MEMORY GAME*/
@@ -258,17 +278,17 @@ form .error{
   
     } 
     .memory-game {
-        width: 500px;
-        height: 500px;
+        width: 300px;
+        height: 300px;
         display: inline-flex;
         flex-wrap: wrap;
         perspective: 1000px;
       }
 
       .memory-card {
-        width: 115px;
-        height: 115px;
-        margin: 5px;
+        width: 60px;
+        height: 60px;
+        margin: 3px;
         position: relative;
         transform: scale(1);
         transform-style: preserve-3d;
@@ -304,12 +324,12 @@ form .error{
   #button {
     border: none;
     color: white;
-    padding: 16px 32px;
+    padding: 10px 26px;
     text-align: center;
     text-decoration: none;
     font-family: "Comic Sans MS", cursive, sans-serif;
     display: block;
-    font-size: 15px;
+    font-size: 10px;
     transition-duration: 0.2s;
     cursor: pointer;
     transform: scale(1);
