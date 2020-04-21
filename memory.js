@@ -305,4 +305,10 @@ function ResetForm() {
     email.style.border = "none";
     password.style.border = "none";
     secondPassword.style.border = "none";
+
+    name.value="";
+    surname.value="";
+    email.value="";
+    password.value="";
+    secondPassword.value="";
 }

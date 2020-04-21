@@ -43,7 +43,7 @@ body{
       margin: 0;
       }
   #h2{
-      font-family: DejaVu Sans Mono, monospace  ;
+    font-family: 'Calligraffitti', cursive;
       font-size: 20px;
       text-align: center;
       margin: 0;
@@ -257,6 +257,12 @@ form .error{
       .section{
           padding: 80px 0;
           text-align: justify;
+      }
+
+      @media screen and (max-width:384px){
+        ul{
+          height:30vh;
+        }
       }
 
       .section:nth-of-type(even){
