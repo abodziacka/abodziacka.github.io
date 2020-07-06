@@ -5,4 +5,7 @@ Aplikacja webowa stworzona w celu zaliczenia  przedmiotu "Programowanie w Intern
 
 
 # Technologie
-* C#
+* CSS
+* HTML
+* JavaScript
+
